@@ -1,4 +1,4 @@
-package dev.tnsi.cadastroDeNinjas;
+package dev.tnsi.cadastroDeNinjas.Ninja.Controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,7 +1,10 @@
-package dev.tnsi.cadastroDeNinjas;
+package dev.tnsi.cadastroDeNinjas.Ninja.Controller;
 
 
+import dev.tnsi.cadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 
 @Entity
@@ -15,6 +18,9 @@ public class NinjaModel {
     private String email;
     private int    idade;
 
+    @ManyToOne
+    @JoinColumn(name = "missoes_id") //Foreing Key
+    private MissoesModel missoes;
 
 
 
